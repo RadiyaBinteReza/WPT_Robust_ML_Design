@@ -1,0 +1,11 @@
+Coil,Quantity,Median change 2→4 layers,Unit,Share of designs where η improves
+primary,L1,306.3909089754964,%,
+primary,R1,354.86225692421397,%,
+primary,Q1,-12.035059392542552,%,
+primary,k,1.2473438388520108,%,
+primary,Eff,-1.6074212135310961,% points,0.22270114942528735
+secondary,L2,287.87118069923895,%,
+secondary,R2,267.9135118810608,%,
+secondary,Q2,3.7453131409651785,%,
+secondary,k,-0.3931460125803088,%,
+secondary,Eff,0.26457129753555964,% points,0.6063218390804598

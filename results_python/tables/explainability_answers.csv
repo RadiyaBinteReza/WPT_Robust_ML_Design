@@ -1,0 +1,8 @@
+Question,Evidence-based answer
+Q1 Which geometry variable most affects efficiency?,"Top permutation importances for η: Dext2 (2.34), N2 (1.16), Dext1 (0.99)."
+Q2 Which variable most affects coupling k?,"Top importances for k: Dext2 (1.77), Dext1 (0.58), N1 (0.17)."
+Q3 Which variable most affects resistance?,"R1: N1 (0.93), Nlay1 (0.71), Dext1 (0.20). R2: N2 (0.86), Nlay2 (0.67), W2 (0.10)."
+Q4 Does increasing the number of turns always improve efficiency?,"No. Feasibility-constrained PD: η vs N1 is non-monotonic, peak at 2; η vs N2 is non-monotonic, peak at 1."
+Q5 Is primary coil size more important than secondary size?,"Importance for η: Dext1 = 0.991, Dext2 = 2.340; PD range of η over Dext1 = 0.403, over Dext2 = 0.658."
+Q6 Do extra layers help (inductance) or hurt (resistance)?,"Primary 2→4 layers: L1 +306 %, R1 +355 %, Q1 -12 %, η -1.6 pp. Secondary: L2 +288 %, R2 +268 %, Q2 +4 %, η +0.3 pp."
+Q7 Which design region balances coupling and resistance?,"Top-10 % FEA designs (Part 13): large coils (median Dext1 ≈ 34 mm, Dext2 ≈ 19 mm), wide traces (W1 ≈ 2.4, W2 ≈ 1.8 mm) and few turns (N1 ≈ 2, N2 ≈ 1); see also the k–R Pareto front in Part 19."

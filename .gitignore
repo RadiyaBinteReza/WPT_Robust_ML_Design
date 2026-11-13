@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+results_python/models/*.joblib
+logs/*.log
+.pytest_cache/
+*.egg-info/
+logs/run_pipeline_*.log
+
+# Dissertation and manuscript drafts are kept out of this repository
+report/
+paper/

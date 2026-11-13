@@ -1,0 +1,8 @@
+Quantity,Value
+Candidates generated,100000
+Geometrically feasible (Din >= 1 mm on both coils),24.8 %
+Candidates with predicted Eff_max < 0,16.9 %
+Predicted Eff_max < 0 among INFEASIBLE candidates,22.4 %
+Predicted Eff_max < 0 among FEASIBLE candidates,0.10 %
+Minimum predicted Eff_max (all),-0.831
+Minimum predicted Eff_max (feasible only),-0.095

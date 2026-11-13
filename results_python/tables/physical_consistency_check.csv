@@ -1,0 +1,5 @@
+"Check (20,000 feasible random designs)",Value
+"Direct η outside [0, 1]",0.13 %
+"Composed η outside [0, 1]",0.00 %
+Median |direct − composed| η,0.0029
+95th pct |direct − composed| η,0.0162

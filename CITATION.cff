@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, and cite the dataset authors (see data/README.md)."
+title: "Physics-Guided Machine Learning and Robust Inverse Design of Multilayer PCB Coils for 6.78 MHz Wireless Power Transfer"
+authors:
+  - family-names: "Reza"
+    given-names: "Radiya Binte"
+    affiliation: "The University of Auckland"
+type: software
+license: MIT
+date-released: 2026-11-07
+references:
+  - type: article
+    title: "Neural Network-Based Design of Wireless Power Transfer Systems for Implantable Medical Devices"
+    authors:
+      - family-names: "Rodriguez-Fuentes"
+        given-names: "A."
+      - family-names: "Carrizosa"
+        given-names: "M. J."
+      - family-names: "Ramos"
+        given-names: "R."
+    journal: "IEEE Transactions on Power Electronics"
+    volume: 41
+    issue: 2
+    start: 3011
+    end: 3024
+    year: 2026
+    doi: "10.1109/TPEL.2025.3614366"

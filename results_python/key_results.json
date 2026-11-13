@@ -1,0 +1,263 @@
+{
+  "dataset": {
+    "rows": 4635,
+    "train": 3244,
+    "val": 695,
+    "test": 696,
+    "eff_max_dataset": 0.90539181688701
+  },
+  "audit_original_inverse_design": {
+    "feasible_fraction": 0.24801,
+    "negative_eff_fraction": 0.16894,
+    "min_pred_eff": -0.8308441167000153
+  },
+  "analytical_proxies": {
+    "Pearson r (log-log)": {
+      "Wheeler L1": 0.9964752749244072,
+      "Wheeler L2": 0.9972575419697337,
+      "AC-resistance proxy R1": 0.8717866267842217,
+      "AC-resistance proxy R2": 0.9104556459386245,
+      "Filament coupling k": 0.9878871334873411,
+      "eta proxy": NaN
+    },
+    "Spearman rho": {
+      "Wheeler L1": 0.9985158148422857,
+      "Wheeler L2": 0.996995167667379,
+      "AC-resistance proxy R1": 0.8877587988646667,
+      "AC-resistance proxy R2": 0.9138725807273294,
+      "Filament coupling k": 0.9870437770661329,
+      "eta proxy": 0.7526361595065058
+    }
+  },
+  "selected_models": {
+    "L1": {
+      "model": "Gaussian Process",
+      "feature_set": "B"
+    },
+    "L2": {
+      "model": "Gaussian Process",
+      "feature_set": "B+"
+    },
+    "R1": {
+      "model": "Gaussian Process",
+      "feature_set": "B"
+    },
+    "R2": {
+      "model": "Gaussian Process",
+      "feature_set": "B+"
+    },
+    "k": {
+      "model": "Gaussian Process",
+      "feature_set": "B+"
+    },
+    "Eff_max": {
+      "model": "Gaussian Process",
+      "feature_set": "B+"
+    }
+  },
+  "final_test": {
+    "L1": {
+      "R2": 0.999743562052089,
+      "R2_model_space": 0.9999679999755062,
+      "RMSE": 0.0588434967852736,
+      "MAE": 0.013182227192416397,
+      "MAPE_percent": 0.49677400969532615
+    },
+    "L2": {
+      "R2": 0.9999489539278172,
+      "R2_model_space": 0.999938965323374,
+      "RMSE": 0.004208689158720991,
+      "MAE": 0.0017413894829552059,
+      "MAPE_percent": 0.5919735093957584
+    },
+    "R1": {
+      "R2": 0.9946877041409633,
+      "R2_model_space": 0.99931806384917,
+      "RMSE": 0.5775076994430014,
+      "MAE": 0.06082617609556464,
+      "MAPE_percent": 2.553560323032269
+    },
+    "R2": {
+      "R2": 0.9981666293041034,
+      "R2_model_space": 0.9984600960917351,
+      "RMSE": 0.01787034277646136,
+      "MAE": 0.006668693031517682,
+      "MAPE_percent": 3.361248405668697
+    },
+    "k": {
+      "R2": 0.9996805577413884,
+      "R2_model_space": 0.9995437004155084,
+      "RMSE": 0.00040370315325141497,
+      "MAE": 0.000241738144432933,
+      "MAPE_percent": 0.4700635645041461
+    },
+    "Eff_max": {
+      "R2": 0.9965797085258811,
+      "R2_model_space": 0.9965797085258811,
+      "RMSE": 0.009443317332173573,
+      "MAE": 0.006034616401113952,
+      "MAPE_percent": 1.2319352921594915
+    }
+  },
+  "mean_test_MAPE_percent": 1.4509258507426148,
+  "median_rmse_change_Bplus_vs_A_percent": {
+    "Eff_max": -33.942237393426055,
+    "L1": -63.149600632400976,
+    "L2": -63.9185813656774,
+    "R1": -33.91703284101496,
+    "R2": -15.839873004424593,
+    "k": -38.06607991916938
+  },
+  "median_rmse_change_B_vs_A_percent": {
+    "Eff_max": -5.4339985038229175,
+    "L1": -5.75359920429766,
+    "L2": 0.24093543053925748,
+    "R1": -2.4519132978023714,
+    "R2": 1.3192187714055836,
+    "k": -7.003621923656783
+  },
+  "eff_estimator_for_design": "composed",
+  "eff_estimators_validation": {
+    "RMSE": {
+      "Direct (Gaussian Process)": 0.009526366754447829,
+      "Composed (L,R,k \u2192 theory)": 0.007886830741130241,
+      "Hybrid (mean of direct & composed)": 0.008226659846865351,
+      "Physics-guided NN": 0.015680466412247098
+    },
+    "R2": {
+      "Direct (Gaussian Process)": 0.9966955999435997,
+      "Composed (L,R,k \u2192 theory)": 0.9977351311051973,
+      "Hybrid (mean of direct & composed)": 0.9975357480582314,
+      "Physics-guided NN": 0.9910472598531034
+    },
+    "MAPE_percent": {
+      "Direct (Gaussian Process)": 1.431246869828423,
+      "Composed (L,R,k \u2192 theory)": 1.1082284172561874,
+      "Hybrid (mean of direct & composed)": 1.1995624712502764,
+      "Physics-guided NN": 2.2844260825446687
+    }
+  },
+  "gpr_calibration": {
+    "68 % (1\u03c3)": 0.7456896551724138,
+    "95 % (1.96\u03c3)": 0.9310344827586207,
+    "99 % (2.58\u03c3)": 0.9655172413793104
+  },
+  "physical_consistency": {
+    "Direct \u03b7 outside [0, 1]": "0.13 %",
+    "Composed \u03b7 outside [0, 1]": "0.00 %",
+    "Median |direct \u2212 composed| \u03b7": "0.0029",
+    "95th pct |direct \u2212 composed| \u03b7": "0.0162"
+  },
+  "inverse_design": {
+    "candidates": 100000,
+    "in_domain_fraction": 0.9789,
+    "ad_threshold": 1.7479421058394993,
+    "pool_eff_max": 0.9105434685672814
+  },
+  "final_designs": {
+    "Highest efficiency": {
+      "Design_ID": "C00070",
+      "W1": 2.9332,
+      "W2": 2.5999,
+      "S1": 2.4378,
+      "S2": 1.087,
+      "N1": 2,
+      "N2": 1,
+      "Dext1": 39.446,
+      "Dext2": 19.5721,
+      "Layers": "2/2",
+      "Nominal_Eff": 0.9105,
+      "Robust_Eff_P5": 0.8974,
+      "k": 0.1111,
+      "R_total": 0.1517,
+      "L1": 0.6948,
+      "L2": 0.1074,
+      "Q1": 243.5335,
+      "Q2": 151.481,
+      "Ro": 0.645,
+      "P_Eff_ge_0.85": 1.0,
+      "NN_FEA_Eff": 0.8837,
+      "NN_FEA_dist": 1.4054
+    },
+    "Smallest compact": {
+      "Design_ID": "C05316",
+      "W1": 2.6108,
+      "W2": 2.9319,
+      "S1": 1.5094,
+      "S2": 1.323,
+      "N1": 1,
+      "N2": 1,
+      "Dext1": 16.6904,
+      "Dext2": 18.6883,
+      "Layers": "4/2",
+      "Nominal_Eff": 0.8,
+      "Robust_Eff_P5": 0.7823,
+      "k": 0.0635,
+      "R_total": 0.1265,
+      "L1": 0.3143,
+      "L2": 0.0934,
+      "Q1": 134.6122,
+      "Q2": 147.3934,
+      "Ro": 0.243,
+      "P_Eff_ge_0.85": 0.0,
+      "NN_FEA_Eff": 0.8431,
+      "NN_FEA_dist": 1.107
+    },
+    "Best robust": {
+      "Design_ID": "C00070",
+      "W1": 2.9332,
+      "W2": 2.5999,
+      "S1": 2.4378,
+      "S2": 1.087,
+      "N1": 2,
+      "N2": 1,
+      "Dext1": 39.446,
+      "Dext2": 19.5721,
+      "Layers": "2/2",
+      "Nominal_Eff": 0.9105,
+      "Robust_Eff_P5": 0.8974,
+      "k": 0.1111,
+      "R_total": 0.1517,
+      "L1": 0.6948,
+      "L2": 0.1074,
+      "Q1": 243.5335,
+      "Q2": 151.481,
+      "Ro": 0.645,
+      "P_Eff_ge_0.85": 1.0,
+      "NN_FEA_Eff": 0.8837,
+      "NN_FEA_dist": 1.4054
+    },
+    "Best balanced": {
+      "Design_ID": "C00001",
+      "W1": 3.9976,
+      "W2": 2.9995,
+      "S1": 1.3132,
+      "S2": 0.6622,
+      "N1": 1,
+      "N2": 1,
+      "Dext1": 28.8455,
+      "Dext2": 19.9933,
+      "Layers": "2/2",
+      "Nominal_Eff": 0.9009,
+      "Robust_Eff_P5": 0.8867,
+      "k": 0.1036,
+      "R_total": 0.0603,
+      "L1": 0.1628,
+      "L2": 0.1047,
+      "Q1": 217.3907,
+      "Q2": 157.2468,
+      "Ro": 0.5439,
+      "P_Eff_ge_0.85": 1.0,
+      "NN_FEA_Eff": 0.8297,
+      "NN_FEA_dist": 1.7835
+    }
+  },
+  "oat_sensitivity": {
+    "W1": 0.022613342517931553,
+    "W2": 0.06573554670330557,
+    "S1": 0.0001217654899330147,
+    "S2": 0.0010665504690629845,
+    "Dext1": 0.046665119853414,
+    "Dext2": 0.8637976749663528
+  }
+}
